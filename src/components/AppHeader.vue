@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <!-- Logo/Brand name -->
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <router-link class="navbar-brand" to="/">Portfolio</router-link>
   
         <!-- Hamburger icon on mobile -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,16 +13,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <router-link class="nav-link" to="#about">About</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
+              <router-link class="nav-link" to="#resume">Resume</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <router-link class="nav-link" to="#contact">Contact</router-link>
             </li>
           </ul>
         </div>

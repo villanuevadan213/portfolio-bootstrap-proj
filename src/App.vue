@@ -1,50 +1,67 @@
 <template>
   <div id="app">
-    <AppHeader /> <!-- Include the header component -->
-
-    <!-- Home Section with Introductory Message and Call to Action -->
-    <section id="home" class="text-center">
-      <div class="intro-message">
-        <h1>Hello, I'm Dan Louie Villanueva !</h1>
-        <p class="lead">
-          I have always had a passion for continuous learning and thrive in environments where I can step outside my comfort zone. Whether it’s working on projects that involve back-end development, exploring product management, or diving into user experience design, I am ready to adapt and embrace new challenges. I believe that my technical background, combined with my eagerness to learn and contribute in diverse ways, makes me an excellent fit for a wide range of opportunities.
-        </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Logo/Brand name -->
+        <router-link class="navbar-brand" to="/">Portfolio</router-link>
+  
+        <!-- Hamburger icon on mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/about">About</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="#resume">Resume</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="#contact">Contact</router-link>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </nav>
+
+    <router-view />
   </div>
 </template>
 
 <script>
-// Import the AppHeader component
-import AppHeader from './components/AppHeader.vue';
+// Import the components here
 
 export default {
   name: 'App',
   components: {
-    AppHeader
   }
 }
 </script>
 
 <style scoped>
-/* Home section styles */
-#home {
-  padding: 220px 0 100px;
-  background-image: url('/src/assets/images/BxWMuseum.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.intro-message h1 {
-  font-size: 3.5rem; 
-  font-weight: bold;
-  color: #FFFFF0; 
-}
+  .navbar-brand {
+    font-weight: bold;
+    color: #FFFFF0;
+  }
 
-.intro-message p {
-  margin: 0 80px;
-  font-size: 1.25rem; 
-  color: #FFFFF0; 
-}
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+    font-weight: 600;
+  }
 </style>
