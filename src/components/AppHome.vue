@@ -33,10 +33,6 @@ export default {
 <style scoped>
 .home {
     height: 100vh;
-    background-image: url('/src/assets/images/BxWMuseum.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
