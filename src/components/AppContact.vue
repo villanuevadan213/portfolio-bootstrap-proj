@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-form-container container align-items-stretch flex-column mt-5">
+    <div class="contact-form-container container align-items-stretch flex-column">
         <h2>Contact Us</h2>
         
         <!-- Form with basic validation -->
@@ -157,7 +157,7 @@ methods: {
 <style scoped>
 .contact-form-container {
     max-width: 768px;
-    margin: 0 auto;
+    margin: 5rem auto 0;
 }
 
 .contact-form-container h2 {

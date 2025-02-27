@@ -45,7 +45,17 @@ export default {
 </script>
 
 <style scoped>
-.container {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    width: 100%; /* Make sure the header takes up the full width of the screen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow to give it a floating effect */
+  }
+
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
